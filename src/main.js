@@ -5,7 +5,7 @@ import { initData } from "./data.js";
 import { processFormData } from "./lib/utils.js";
 import { initTable } from "./components/table.js";
 
-// @todo: подключение
+// подключение
 import { initPagination } from "./components/pagination.js";
 import { initSorting } from "./components/sorting.js";
 import { initFiltering } from "./components/filtering.js";
@@ -60,7 +60,7 @@ const sampleTable = initTable(
   render,
 );
 
-// @todo: инициализация
+// инициализация
 
 const applySearching = initSearching("search");
 

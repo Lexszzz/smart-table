@@ -10,7 +10,7 @@ import {cloneTemplate} from "../lib/utils.js";
 export function initTable(settings, onAction) {
     const {tableTemplate, rowTemplate, before, after} = settings;
     const root = cloneTemplate(tableTemplate);
- // @todo: #1.2 —  вывести дополнительные шаблоны до и после таблицы
+ //  вывести дополнительные шаблоны до и после таблицы
 before.reverse().forEach(subName => {
     root[subName] = cloneTemplate(subName);
     root.container.prepend(root[subName].container);
@@ -38,7 +38,7 @@ root.container.addEventListener('submit', (e) => {
 
 
     const render = (data) => {
-        // @todo: #1.1 — преобразовать данные в массив строк на основе шаблона rowTemplate
+        //  преобразовать данные в массив строк на основе шаблона rowTemplate
         const nextRows = data.map(item => {
     const row = cloneTemplate(rowTemplate);
 
