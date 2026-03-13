@@ -66,7 +66,7 @@ const sampleTable = initTable(
 
 const applySearching = initSearching("search");
 
-const {applyFiltering, updateIndexes} = initFiltering(
+const { applyFiltering, updateIndexes } = initFiltering(
   sampleTable.filter.elements,
 );
 
@@ -75,7 +75,7 @@ const applySorting = initSorting([
   sampleTable.header.elements.sortByTotal,
 ]);
 
-const {applyPagination, updatePagination} = initPagination(
+const { applyPagination, updatePagination } = initPagination(
   sampleTable.pagination.elements,
   (el, page, isCurrent) => {
     const input = el.querySelector("input");
